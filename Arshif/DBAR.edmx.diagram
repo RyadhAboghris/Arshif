@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69567457b42447889b790335dc8d42a9" Name="Diagram1">
+        <EntityTypeShape EntityType="DBARModel.TBArchiveCategory" Width="1.5" PointX="5.25" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBARModel.TBDep" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBARModel.TBUSER" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="DBARModel.FK_TBArchiveCategory_TBUSERS" ManuallyRouted="false" />
+        <AssociationConnector Association="DBARModel.FK_TBUSERS_TBDep" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DBARModel.TBArchiveFile" Width="1.5" PointX="7.5" PointY="10.25" />
+        <AssociationConnector Association="DBARModel.FK_TBArchiveFiles_TBArchiveCategory" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
